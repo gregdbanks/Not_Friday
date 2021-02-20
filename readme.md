@@ -1,12 +1,8 @@
-# StoryBooks
+# NotFriday
 
-> Create public and private stories from your life
+> Create public and private standup, planning, and retro entries
 
 This app uses Node.js/Express/MongoDB with Google OAuth for authentication
-
-## Usage
-
-Add your mongoDB URI and Google OAuth credentials to the config.env file
 
 ```
 # Install dependencies
@@ -18,4 +14,5 @@ npm run dev
 # Run in production
 npm start
 ```
+
 # Not_Friday
