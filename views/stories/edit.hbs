@@ -4,13 +4,6 @@
         <input type="hidden" name="_method" value="PUT">
         <div class="row">
             <div class="input-field">
-                <input type="text" id="title" name="title" value="{{story.title}}">
-                <label for="title">Title</label>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="input-field">
                 <select id="status" name="status">
                     {{#select story.status}}
                     <option value="public" selected>Public</option>
@@ -21,10 +14,25 @@
             </div>
         </div>
 
+
         <div class="row">
             <div class="input-field">
-                <h5>Tell Us Your Story:</h5>
-                <textarea id="body" name="body">{{story.body}}</textarea>
+                <h5>What did you accomplish yesterday?</h5>
+                <textarea id="daily" name="daily"></textarea>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="input-field">
+                <h5>What do you plan to complete today?</h5>
+                <textarea id="completed" name="completed"></textarea>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="input-field">
+                <h5>Do you have any blockers?</h5>
+                <textarea id="blockers" name="blockers"></textarea>
             </div>
         </div>
 
