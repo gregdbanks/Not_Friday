@@ -1,28 +1,31 @@
-const mongoose = require('mongoose')
+const mongoose = require("mongoose");
 
 const StorySchema = new mongoose.Schema({
-  title: {
+  daily: {
     type: String,
     required: true,
-    trim: true,
   },
-  body: {
+  completed: {
+    type: String,
+    required: true,
+  },
+  blockers: {
     type: String,
     required: true,
   },
   status: {
     type: String,
-    default: 'public',
-    enum: ['public', 'private'],
+    default: "public",
+    enum: ["public", "private"],
   },
   user: {
     type: mongoose.Schema.Types.ObjectId,
-    ref: 'User',
+    ref: "User",
   },
   createdAt: {
     type: Date,
     default: Date.now,
   },
-})
+});
 
-module.exports = mongoose.model('Story', StorySchema)
+module.exports = mongoose.model("Story", StorySchema);
