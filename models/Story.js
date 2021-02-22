@@ -11,7 +11,6 @@ const StorySchema = new mongoose.Schema({
   },
   blockers: {
     type: String,
-    required: true,
   },
   status: {
     type: String,

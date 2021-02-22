@@ -36,7 +36,7 @@ router.get('/', ensureAuth, async (req, res) => {
       stories,
     })
   } catch (err) {
-    console.error(err)
+    console.error(err)                   
     res.render('error/500')
   }
 })
