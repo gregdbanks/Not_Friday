@@ -1,7 +1,7 @@
 <h1>Daily Standup</h1>
 <div class="row">
     {{#each stories}}
-    <div class="col s12 m4">
+    <a href="/stories/{{_id}}">
         <div class="card">
             <div class="card-image">
                 {{{editIcon user ../user _id}}}
@@ -19,11 +19,8 @@
                     <a href="/stories/user/{{user._id}}">{{user.displayName}}</a>
                 </div>
             </div>
-            {{!-- <div class="card-action center-align">
-                <a href="/stories/{{_id}}" class="btn grey">Read More</a>
-            </div> --}}
         </div>
-    </div>
+    </a>
     {{else}}
     <p>No entries to display</p>
     {{/each}}
