@@ -7,16 +7,21 @@
                 {{{editIcon user ../user _id}}}
             </div>
             <div class="card-content center-align">
-                <h3>{{Story.daily}}</h3>
+                <h3>What did you do yesterday?</h3>
+                <p>{{daily}}</p>
+                <h3>What do you plan completing today?</h3>
+                <p>{{completed}}</p>
+                <h3>Do you have any blockers?</h3>
+                <p>{{blockers}}</p>
                 <br>
                 <div class="chip">
                     <img src="{{user.image}}" alt="">
                     <a href="/stories/user/{{user._id}}">{{user.displayName}}</a>
                 </div>
             </div>
-            <div class="card-action center-align">
+            {{!-- <div class="card-action center-align">
                 <a href="/stories/{{_id}}" class="btn grey">Read More</a>
-            </div>
+            </div> --}}
         </div>
     </div>
     {{else}}
