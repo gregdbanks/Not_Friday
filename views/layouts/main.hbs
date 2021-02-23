@@ -26,7 +26,13 @@
         M.Sidenav.init(document.querySelector('.sidenav'))
         M.FormSelect.init(document.querySelector('#status'))
 
-        CKEDITOR.replace('body', {
+        CKEDITOR.replace('daily', {
+            plugins: 'wysiwygarea, toolbar, basicstyles, link'
+        })
+        CKEDITOR.replace('completed', {
+            plugins: 'wysiwygarea, toolbar, basicstyles, link'
+        })
+        CKEDITOR.replace('blockers', {
             plugins: 'wysiwygarea, toolbar, basicstyles, link'
         })
     </script>
