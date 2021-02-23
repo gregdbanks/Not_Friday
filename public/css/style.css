@@ -30,3 +30,7 @@ h3 {
   cursor: default;
   font-style: italic;
 }
+
+textarea {
+  height: 200px;
+}

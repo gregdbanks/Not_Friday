@@ -8,11 +8,11 @@
             </div>
             <div class="card-content center-align">
                 <h3>What did you do yesterday?</h3>
-                <p>{{daily}}</p>
+                <p>{{stripTags daily}}</p>
                 <h3>What do you plan completing today?</h3>
-                <p>{{completed}}</p>
+                <p>{{stripTags completed}}</p>
                 <h3>Do you have any blockers?</h3>
-                <p>{{blockers}}</p>
+                <p>{{stripTags blockers}}</p>
                 <br>
                 <div class="chip">
                     <img src="{{user.image}}" alt="">
