@@ -4,8 +4,8 @@
 <table class="striped">
     <thead>
         <tr>
-            <th>Title</th>
-            <th>Date</th>
+            <th>Yesterday</th>
+            <th>Today</th>
             <th>Status</th>
             <th></th>
         </tr>
@@ -13,8 +13,8 @@
     <tbody>
         {{#each stories}}
         <tr>
-            <td><a href="/stories/{{_id}}">{{title}}</a></td>
-            <td>{{formatDate createdAt 'MMMM Do YYYY, h:mm:ss a'}}</td>
+            <td>{{stripTags (truncate completed 15)}}</td>
+            <td>{{stripTags (truncate daily 15)}}</td>
             <td><span class="dash-status">{{status}}</span></td>
             <td>
                 <a href="/stories/edit/{{_id}}" class="btn btn-float">

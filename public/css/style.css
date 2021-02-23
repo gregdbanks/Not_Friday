@@ -1,5 +1,7 @@
 p {
   margin: 10px 0 !important;
+  font-size: 10px;
+  font-style: italic;
 }
 
 .login-container {
@@ -19,4 +21,10 @@ p {
 
 .img-small {
   width: 180px;
+}
+
+h3 {
+  font-size: 12px;
+  font-style: bold;
+  text-decoration: underline;
 }
