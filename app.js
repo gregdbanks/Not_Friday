@@ -101,5 +101,3 @@ app.listen(
   PORT,
   console.log(`Server running in ${process.env.NODE_ENV} mode on port ${PORT}`)
 );
-
-https://console.developers.google.com/apis/credentials/oauthclient/${740153734560-f8u40b0ud72f4a2foihqsljk3mdcrr5t.apps.googleusercontent.com}?project=${your_project_number}
